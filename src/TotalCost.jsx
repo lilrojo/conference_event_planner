@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import "./TotalCost.css";
 
-const TotalCost = ({ totalCosts, ItemsDisplay }) => {
-  
-
+const TotalCost = ({ totalCosts, ItemsDisplay }) => {    
   return (
     <div className="pricing-app">
       <div className="display_box">
@@ -12,11 +10,11 @@ const TotalCost = ({ totalCosts, ItemsDisplay }) => {
         </div>
         <div>
           <h2 id="pre_fee_cost_display" className="price">
-           
+            ${total_amount}
           </h2>
          
-            <div>
-             
+            <div className="render_items">
+                <ItemsDisplay />
             </div>
         </div>
       </div>
